@@ -78,7 +78,7 @@ finishGameButton.addEventListener('click', () => {
     };
 
     pastGamesArray.push(currentGame);
-    console.log(currentGame)
+    
     
     // HINT: it will be helpful to keep track of these games as objects with 4 properties, one for each piece of state we're tracking
 
