@@ -39,3 +39,35 @@ https://alchemycodelab.github.io/web-01-soccer-scorekeeper/
 | IMPURE: `displayAllGames()` : clears out and appends to games div | 1|
 | PURE with TDD: `renderGame(game)` : returns DOM node | 1|
 | PURE with TDD: `renderTeam(name, score)` :  return DOM node | 1|
+
+
+
+Event Listners
+Name-teams button(nameForm)- Adds team 1 name to team-one-name element. and team 2 name to team-two-name element.
+
+Team one add button- Add++; to team one score
+Team one subtract button-Subtract from team one score
+
+Team two add button- Add++; to team two score
+Team two subtract button-Subtract from team two score
+
+finish game button-add the current game to an array of games in state.
+
+ HINT: it will be helpful to keep track of these games as objects with 4 properties, one for each piece of state we're tracking
+
+ --FUNCTIONS--
+ display games El-// clear out the current game div
+
+    // change the label to show team one's name;
+    // change the label to show team two's name;
+
+    // call the render game function to create a game element
+    
+    // append the element to the cleared out current game div
+
+
+function displayAllGames() {
+    // clear out the past games list in the DOM
+
+    // loop through the past games in state
+    // render and append a past game for each past game in state
