@@ -70,15 +70,22 @@ score2--;
 finishGameButton.addEventListener('click', () => {
     
     // add the current game to an array of games in state.
-    const pastGamesArray =[name1, name2, score1, score2]
-    pastGamesArray.push[name1, name2, score1, score2];
-    console.log(pastGamesArray);
+    let currentGame = {
+        name1,
+        score1,
+        name2,
+        score2,
+    };
+
+    pastGamesArray.push(currentGame);
+    console.log(currentGame)
+    
     // HINT: it will be helpful to keep track of these games as objects with 4 properties, one for each piece of state we're tracking
 
     displayAllGames();
 
     // reset the initial state to start with a new form
-    nameForm.reset();
+    
     displayCurrentGameEl();
 });
 
@@ -113,11 +120,11 @@ function displayAllGames() {
     // clear out the past games list in the DOM
 pastGamesEl.textContent = '';
     // loop through the past games in state
-    for(let game of pastGamesArray){
-        
+    
+       
     }
     // render and append a past game for each past game in state
-}
+
 
 
 //displayCurrentGameEl(currentGame);
