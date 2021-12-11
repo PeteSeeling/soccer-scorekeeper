@@ -22,12 +22,7 @@ let score1 = 0;
 let score2 = 0;
 
 
-const game = {
-    name1: name1,
-    name2: name2,
-    score1: score1,
-    score2: score2,
-};
+
 let pastGamesArray = [];
 
 nameForm.addEventListener('submit', (e) => {
@@ -87,8 +82,9 @@ finishGameButton.addEventListener('click', () => {
     displayAllGames();
 
     // reset the initial state to start with a new form
-    
+
     displayCurrentGameEl();
+    currentGameEl.textContent = '';
 });
 
 
@@ -114,13 +110,14 @@ function displayCurrentGameEl() {
     // append the element to the cleared out current game div
     currentGameEl.append(renderGameEL);
     
-};
+}
 
 
 
 function displayAllGames() {
     // clear out the past games list in the DOM
     pastGamesEl.value = '';
+    
     // loop through the past games in state
     
     for (let pastGame of pastGamesArray){
